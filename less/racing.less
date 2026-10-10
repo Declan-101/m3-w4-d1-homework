@@ -1,0 +1,130 @@
+@import "colors.less";
+@import "fonts.less";
+
+// Mixin
+.fullWidth() {
+    width: 100%;
+    float: left;
+}
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: @bodyText;
+    font-size: 1em;
+    font-family: @mainFont;
+    line-height: 1.80857;
+    font-weight: @normalWeight;
+    overflow-x: hidden;
+}
+
+// Nesting
+.about_main {
+    .collection_section {
+        .fullWidth();
+        margin-top: 40px;
+
+        .container {
+            .new_text {
+                .fullWidth();
+                font-size: 2em;
+                color: @darkText;
+            }
+
+            .consectetur_text {
+                .fullWidth();
+                font-size: 1.2em;
+                color: @darkText;
+                font-weight: @regularWeight;
+                margin-left: 0px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    // Supports both the CSS image and supplied HTML spelling.
+    .collection_section_3,
+    .collectipn_section_3 {
+        .fullWidth();
+        padding-top: 0px;
+
+        .container .racing_shoes {
+            .fullWidth();
+            background-color: @lightGray;
+            height: auto;
+            padding-top: 70px;
+            background-size: 100%;
+            padding-bottom: 100px;
+            margin-bottom: 100px;
+
+            .shoes-img3 {
+                .fullWidth();
+                text-align: center;
+
+                img {
+                    margin-top: 4em;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+.collection_text {
+    .fullWidth();
+    color: @white;
+    text-align: center;
+    font-family: @headingFont;
+    font-weight: @boldWeight;
+    font-size: 3em;
+    background-color: @red;
+    padding: 30px 0px;
+}
+
+.about_main {
+    .collection_section_3,
+    .collectipn_section_3 {
+        .container .racing_shoes .sale_text {
+            .fullWidth();
+            font-size: 3em;
+            color: @red;
+            line-height: 75px;
+        }
+    }
+}
+
+.collection_section_3,
+.collectipn_section_3 {
+    .container .racing_shoes {
+        .number_text {
+            .fullWidth();
+            font-size: 3em;
+            color: @red;
+            line-height: 75px;
+        }
+
+        .seemore {
+            width: 80%;
+            height: 50px;
+            color: @white;
+            background-color: @red;
+            font-size: 1.7em;
+            margin-top: 35px;
+        }
+    }
+}
+
+.copyright {
+    .fullWidth();
+    font-size: 1em;
+    color: @white;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: @red;
+    font-family: @mainFont;
+}
